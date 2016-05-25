@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 
 import OnboardingGuide from './OnboardingGuide';
 
-import * as OnboardingGuideActions from '../../actions/OnboardingGuideActions';
+import * as OnboardingGuideActions from '../../../actions/OnboardingGuideActions';
 
 const OnbardingGuideContainer = ({ actions, data, railsContext }) =>
         r(OnboardingGuide, { actions, data, railsContext });

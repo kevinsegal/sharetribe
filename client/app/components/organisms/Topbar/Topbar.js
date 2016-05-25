@@ -3,7 +3,7 @@ import r, { div } from 'r-dom';
 
 import css from './Topbar.css';
 
-import Logo from './Logo';
+import Logo from '../../atoms/Logo/Logo';
 
 class Topbar extends Component {
   render() {

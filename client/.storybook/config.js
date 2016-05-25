@@ -8,10 +8,10 @@ initializeI18n({ i18nLocale: 'en', i18nDefaultLocale: 'en' }, process.env.NODE_E
 
 const loadStories = function loadStories() {
   require('../app/components/Styleguide/ColorsAndTypography.js');
-  require('../app/components/Topbar/Logo.story.js');
-  require('../app/components/Topbar/Topbar.story.js');
-  require('../app/components/OnboardingTopbar/OnboardingTopbar.story.js');
-  require('../app/components/OnboardingGuide/OnboardingGuide.story.js');
+  require('../app/components/atoms/Logo/Logo.story.js');
+  require('../app/components/organisms/Topbar/Topbar.story.js');
+  require('../app/components/organisms/OnboardingTopbar/OnboardingTopbar.story.js');
+  require('../app/components/organisms/OnboardingGuide/OnboardingGuide.story.js');
 };
 
 configure(loadStories, module);

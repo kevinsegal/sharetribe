@@ -1,6 +1,6 @@
 import { div } from 'r-dom';
 import { storiesOf, action } from '@kadira/storybook';
-import withProps from '../Styleguide/withProps';
+import withProps from '../../Styleguide/withProps';
 
 import GuideStatusPage from './GuideStatusPage';
 import GuideSloganAndDescriptionPage from './GuideSloganAndDescriptionPage';

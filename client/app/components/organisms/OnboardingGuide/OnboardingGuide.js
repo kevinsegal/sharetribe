@@ -9,7 +9,7 @@ import GuideFilterPage from './GuideFilterPage';
 import GuidePaypalPage from './GuidePaypalPage';
 import GuideListingPage from './GuideListingPage';
 import GuideInvitationPage from './GuideInvitationPage';
-import { t } from '../../utils/i18n';
+import { t } from '../../../utils/i18n';
 
 const { shape, string, arrayOf, bool, oneOf, func, object } = PropTypes;
 
