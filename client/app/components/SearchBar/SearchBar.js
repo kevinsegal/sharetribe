@@ -1,8 +1,10 @@
 import { Component, PropTypes } from 'react';
 import { form, input, button } from 'r-dom';
-import { t } from '../../utils/i18n';
+
+// import { t } from '../../utils/i18n';
 
 import css from './SearchBar.css';
+import icon from './images/search-icon.svg';
 
 const SEARCH_MODE_KEYWORD = 'keyword';
 const SEARCH_MODE_LOCATION = 'location';
@@ -32,7 +34,11 @@ class SearchBar extends Component {
     }
     return form({ className: css.root }, [
       ...inputs,
-      button({ className: css.searchButton, type: 'submit' }),
+      button({
+        type: 'submit',
+        className: css.searchButton,
+        dangerouslySetInnerHTML: { __html: icon },
+      }),
     ]);
   }
 }

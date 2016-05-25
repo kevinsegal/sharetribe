@@ -2,12 +2,11 @@
   display: flex;
   border: 1px solid #eee;
   border-radius: 1em;
-  padding: 0 1em;
+  padding: 0 0.5em 0 1em;
 }
 
 .keywordInput,
 .locationInput {
-  background-image: url('./images/search-icon.svg');
   line-height: 3em;
   border: none;
   flex: auto;
@@ -28,8 +27,4 @@
   border: none;
   width: 3em;
   background-color: transparent;
-  background-image: url('./images/search-icon.svg');
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
 }

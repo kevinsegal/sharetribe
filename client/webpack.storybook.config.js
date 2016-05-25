@@ -17,7 +17,8 @@ config.module.loaders.push(
     ],
     include: path.resolve(__dirname, '../'),
   },
-  { test: /\.(jpe?g|png|gif|svg|ico)$/, loader: 'url?limit=10000' }
+  { test: /\.(jpe?g|png|gif|ico)$/, loader: 'url?limit=10000' },
+  { test: /\.svg$/, loader: 'raw-loader' }
 );
 
 config.devtool = 'eval-source-map';

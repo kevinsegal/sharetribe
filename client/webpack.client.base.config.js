@@ -57,9 +57,9 @@ module.exports = {
   ],
   module: {
     loaders: [
-      { test: /\.(woff2?|svg)$/, loader: 'url?limit=10000' },
+      { test: /\.(woff2?)$/, loader: 'url?limit=10000' },
       { test: /\.(ttf|eot)$/, loader: 'file' },
-      { test: /\.(jpe?g|png|gif|svg|ico)$/, loader: 'url?limit=10000' },
+      { test: /\.(jpe?g|png|gif|ico)$/, loader: 'url?limit=10000' }
     ],
   },
   postcss: [
