@@ -35,6 +35,14 @@ If you need to debug the Rails parts of Sharetribe with [Pry](https://github.com
 Developing new components
 ==========================
 
+Components are separated based on [Atomic design](http://bradfrost.com/blog/post/atomic-web-design/): _atoms_, _molecules_, and _organisms_.
+- **Atoms** are React components which are basic HTML elements and they don't combine several visual elements. For example: avatar image.
+- **Molecules** are combined atoms. E.g. ProfileCard combining Avatar and Name atoms could be a molecule.‰
+- **Organisms** are higher level molecules. They are responsible for page sections like html5 tags do. (Think about ```<header>```, ```<footer>```, ```<main>```, ```<aside>```, and ```<section>```)
+
+Later we might add template & page levels too.
+
+
 You need to register new React components (e.g. "ExampleApp") for react_on_rails gem to recognize it.
 ```js
 ReactOnRails.register({ ExampleApp });
